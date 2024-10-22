@@ -1,0 +1,165 @@
+:root {
+    --bronce-tropico: #B5A160;
+    --green-tropico: #00594E;
+    --azul-ocean: #5A9696;
+}
+
+body {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.cont{
+    width: 50%;
+}
+
+.cardLogin {
+    display: flex;
+    color: #ffffff;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    padding: 2rem;
+    background-color: #00594E;
+    border: 1px solid #0a0909;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cont_credentials {
+    align-items: start;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    background-color: #f0f8ff;
+    border: 1px solid var(--green-tropico);
+    border-radius: 5px;
+}
+
+input:focus{
+    border-color: var(--green-tropico);
+}
+
+.head-text {
+    align-self: center;
+}
+
+.botonLogear {
+    width: 50%;
+    align-self: center;
+    color: white;
+    background-color: var(--azul-ocean);
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.botonLogear:hover {
+    color: var(--green-tropico);
+}
+
+/* Adaptación del diseño para móviles */
+@media (max-width: 600px) {
+    .options-container {
+        flex-direction: column;
+    }
+}
+
+/* Estilos generales */
+.header {
+    background-color: var(--green-tropico);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Opciones */
+.option {
+    background-color: var(--azul-ocean);
+    width: 80%;
+    margin: 10px 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-box {
+    background-color: #E9E9E9;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option-text {
+    font-size: 16px;
+    color: white;
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    
+    .container {
+        padding: 10px;
+    }
+
+    .option {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .logo-box {
+        height: 40px;
+    }
+
+    .option-text {
+        font-size: 14px;
+    }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 769px) {
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .option {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo-box {
+        width: 30%;
+        height: 60px;
+    }
+
+    .option-text {
+        width: 60%;
+        font-size: 18px;
+        text-align: center;
+    }
+}

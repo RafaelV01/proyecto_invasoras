@@ -1,0 +1,343 @@
+:root {
+    --bronce-tropico: #f9e8ae; 
+    --bronce-claro: #ffffff; /* Bronce oscuro para mayor contraste */
+    --green-tropico: #00594E; 
+    --azul-ocean: #5A9696; 
+    --verde-suave: #A2D6D4; /* Verde suave como acento */
+}
+
+/* #B5A160 */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #f0f8ff;
+}
+
+select {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    background-color: #f0f8ff;
+    border: 1px solid var(--green-tropico);
+    border-radius: 5px;
+}
+
+.topbar {
+    background-color: var(--green-tropico);
+    padding: 1rem;
+    text-align: center;
+}
+
+.topbarlogo {
+    width: 5em;
+    height: auto;
+}
+
+.options-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    width: 100%;
+    flex: 1;
+    flex-direction: column;
+    align-self: center;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-right: 4rem;
+    padding-left: 4rem;
+}
+
+.option-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--azul-ocean);
+    border: 1px solid #ddd;
+    border-radius: 2px;
+    padding: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.icon {
+    max-width: 50px;
+    max-height: 50px;
+    margin-bottom: 0.5rem;
+    object-fit: contain;
+}
+
+.option-name {
+    margin: 0;
+    font-size: 1rem;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Estilos generales */
+.header {
+    background-color: var(--green-tropico);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.logo-box {
+    background-color: var(--verde-suave); /* Verde suave como fondo */
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.option-text {
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}
+
+.search-box {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searcher {
+    display: flex;
+    margin: 5px;
+    background-color: #f0f8ff;
+    border: 1px solid;
+    border-color: var(--green-tropico);
+    padding-left: 20px;
+    border-radius: 35px;
+    gap: 1px;
+}
+
+input.input-buscador,
+input.input-buscador:focus {
+    color: var(--green-tropico);
+    padding: 5px;
+    width: 300px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+
+.filter-button {
+    color: var(--green-tropico);
+    cursor: pointer;
+    border-radius: 35px;
+    margin-left: auto;
+    border: none;
+    background-color: #f0f8ff;
+}
+
+.filter-icon {
+    width: 24px;
+    max-height: 24px;
+    color: var(--bronce-tropico);
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    padding: 20px;
+}
+
+.btn{
+    background-color: #00594E;
+    box-shadow: 0 2px 8px rgba(78, 78, 78, 0.2); /* Sombra sutil para profundidad */
+    --bs-btn-border-color: #aaa;
+    --bs-btn-hover-border-color: #000;
+    --bs-btn-hover-bg: #aaa;
+}
+
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.pag_button {
+    color: var(--green-tropico);
+}
+
+a:focus {
+    color: var(--green-tropico);
+}
+
+/* Estilo para las imágenes */
+.imageEspecie {
+    width: 100%;            /* Ocupa todo el ancho del contenedor */
+    height: 200px;          /* Fija la altura que deseas para las imágenes */
+    object-fit: cover;      /* Recorta la imagen si es necesario, pero mantén la proporción */
+    border-radius: 10px;    /* Bordes redondeados */
+    transition: transform 0.3s, box-shadow 0.3s; /* Agrega transición para efectos */
+    --bs-btn-hover-bg: #000000;
+}
+
+/* Efecto de hover para las imágenes */
+.imageEspecie:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño al pasar el ratón */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3); /* Aumenta la sombra al pasar el ratón */
+}
+
+
+
+/* Contenedor de la tarjeta */
+.cardcontain {
+    display: flex;
+    width: 100%;
+    width: 70%;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.card_specie {
+    background-color: #E9E9E9;
+    border-radius: 10px;
+    padding: 10px;
+    width: 70%;
+}
+
+.center {
+    display: block;
+    text-align: center;
+}
+
+
+/* CONTAINER OPCIONES FILTRADO------- */
+
+.modal-content {
+    border-radius: 15px;
+    border: 1px solid #ddd;
+}
+
+.modal-header {
+    background-color: #f8f9fa; /* Color de fondo más claro */
+    border-bottom: 2px solid var(--green-tropico); /* Línea inferior para separar */
+}
+
+.modal-title {
+    color: var(--green-tropico); /* Color del título */
+}
+
+.modal-body p {
+    font-size: 1.1rem; /* Aumentar tamaño de texto */
+    color: #333; /* Color del texto */
+}
+
+.modal-footer {
+    border-top: 2px solid var(--green-tropico); /* Línea superior en el pie */
+}
+
+/* Estilo del botón de cierre */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.row{
+    min-width: 90%;
+}
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px;  
+    background-color: var(--green-tropico); 
+    color: var(--bronce-claro); 
+    border: none;  
+    border-radius: 5px; 
+    padding: 10px 15px; 
+    cursor: pointer; 
+    z-index: 1000; 
+}
+
+.scroll-to-top:hover {
+    background-color: var(--azul-ocean); /* Color de fondo al pasar el mouse */
+}
+
+/* Adaptación del diseño para móviles */
+@media (max-width: 600px) {
+    .options-container {
+        flex-direction: column;
+    }
+}
+
+/* Estilos para dispositivos móviles */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 10px;
+    }
+
+    .option {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .logo-box {
+        height: 40px;
+    }
+
+    .option-text {
+        font-size: 14px;
+    }
+}
+
+/* Estilos para pantallas grandes */
+@media (min-width: 769px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .option {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo-box {
+        width: 30%;
+        height: 60px;
+    }
+
+    .option-text {
+        width: 60%;
+        font-size: 18px;
+        text-align: center;
+    }
+}

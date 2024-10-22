@@ -1,0 +1,260 @@
+:root {
+    --bronce-tropico: #fff;
+    --green-tropico: #00594E;
+    --azul-ocean: #5A9696;
+    --sidebar-width: 250px;
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    background-color: #B5A160;
+    flex-direction: column;
+}
+
+.a {
+    color: #000;
+}
+
+.navbar {
+    height: 60px;
+    background-color: #00594E;
+}
+
+.paginacion {
+    color: #000;
+}
+
+.container {
+    color: #000;
+}
+
+.content {
+    color: #000;
+}
+
+.content-wrapper {
+    display: flex;
+    flex: 1;
+    margin-top: 60px;
+    overflow: hidden;
+    color: #000;
+}
+
+.sidebar {
+    color: white;
+    height: 100%;
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: var(--sidebar-width);
+    background-color: var(--green-tropico);
+    overflow-y: auto;
+}
+
+
+.btnEditImgs {
+    background-color: transparent;
+    border: none;
+    margin-left: -25px;
+    z-index: 1;
+}
+
+.colorSideBar {
+    color: #ddd;
+    background-color: var(--green-tropico);
+    border: none;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 4px;
+}
+
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
+    border-color: var(--bronce-tropico);
+}
+
+.topbarlogo {
+    width: 4.5em;
+    height: auto;
+}
+
+.main-content {
+    margin-left: var(--sidebar-width);
+    padding: 20px;
+    flex: 1;
+    background-color: #fff;
+    overflow-y: auto;
+    height: calc(100vh - 60px);
+}
+
+.navbarcolor {
+    background-color: #00594E;
+}
+
+input,
+select,
+textarea {
+    width: 70%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    background-color: #f0f8ff;
+    border: 1px solid var(--green-tropico);
+    border-radius: 5px;
+}
+
+.btnSearch {
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    background-color: #f0f8ff;
+    border: none;
+    border-radius: 5px;
+}
+
+.btnSearch:hover {
+    background-color: #5A9696;
+    color: white;
+}
+
+/* text pagination*/
+a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.pag_button {
+    color: var(--green-tropico);
+}
+
+a:focus {
+    color: var(--green-tropico);
+}
+
+/* */
+
+/* to top button*/
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--green-tropico);
+    color: var(--bronce-claro);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.scroll-to-top:hover {
+    background-color: var(--azul-ocean);
+    /* Color de fondo al pasar el mouse */
+}
+
+/* */
+
+.fondo-fila {
+    background-color: rgba(7, 30, 76, 0.753);
+}
+
+.transparente {
+    background-color: #ff000000;
+}
+
+@media (max-width: 768px) {
+
+    input[type="number"],
+    input[type="email"],
+    input[type="password"],
+    input[type="text"],
+    input[type="tel"],
+    select {
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --sidebar-width: 150px;
+        /* Cambiar el ancho para pantallas más pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --sidebar-width: 100px;
+        /* Cambiar el ancho para pantallas aún más pequeñas */
+    }
+}
+
+/* Estilo específico para el contenedor de la tabla */
+.table-responsive {
+    overflow-x: auto;
+    /* Permite desplazamiento horizontal si es necesario */
+    width: 100%;
+}
+
+.table {
+    width: 100%;
+    /* Asegura que la tabla ocupe el 100% del contenedor */
+    table-layout: fixed;
+    /* Ajusta el layout de la tabla */
+    word-wrap: break-word;
+    /* Asegura que el contenido de las celdas no desborde */
+}
+
+
+table {
+    width: 100%;
+    /* La tabla ocupa el 100% del ancho del contenedor */
+    border-collapse: collapse;
+    /* Elimina el espacio entre las celdas */
+    margin-top: 20px;
+    /* Espacio encima de la tabla */
+}
+
+th,
+td {
+    padding: 10px;
+    /* Espaciado interno de las celdas */
+    text-align: left;
+    /* Alinea el texto a la izquierda */
+    border: 1px solid #ddd;
+    /* Añade un borde claro a las celdas */
+}
+
+th {
+    background-color: #4CAF50;
+    /* Color de fondo del encabezado */
+    color: white;
+    /* Color del texto del encabezado */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+    /* Color de fondo para las filas pares */
+}
+
+tr:hover {
+    background-color: #ddd;
+    /* Color de fondo al pasar el ratón sobre una fila */
+}
