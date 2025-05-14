@@ -1,8 +1,8 @@
 <?php
 $servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "sistemas_esp_invasoras";
+$username = "colminds_center_php_credential";
+$password = "invasoras123.";
+$dbname = "colminds_sistemas_esp_invasoras";
 
 // Crear conexión
 $conexion = new mysqli($servername, $username, $password, $dbname);
